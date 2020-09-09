@@ -7,17 +7,25 @@
 -->
 # flutter_qjs
 
-A quickjs engine for flutter.
+一个为flutter开发的quickjs引擎。
 
-## Feature
+## QuickJS
 
-This plugin is a simple js engine for flutter using the `quickjs` project. Plugin currently supports Windows, Linux, and Android.
+官方站点：https://bellard.org/quickjs/
 
-Each `FlutterJs` object creates a new thread that runs a simple js loop. 
+中文站点：https://github.com/quickjs-zh/
 
-ES6 module with `import` function is supported and can manage in dart with `setModuleHandler`.
+QuickJS QQ群：**598609506**。
 
-A global async function `dart` is presented to invoke dart function, and `Promise` is supported so that you can use `await` or `then` to get external result from `dart`. Data convertion between dart and js are implemented as follow:
+## 功能
+
+这是一个使用`quickjs`为底层，为flutter开发的一个轻量级JS引擎插件。当前插件支持Windows，Linux和Android。
+
+每个 `FlutterJs` 对象创建一个新的线程来执行js loop。
+
+ES6模块中`import`函数已经支持可以通过dart中`setModuleHandler`来管理。
+
+提供一个全局的`dart`函数来调用dart方法, 并且`Promise` 已经被支持，所以你可以使用`await`或者`then`来获取来自`dart`中处理的结果。dart和js直接的数据转化可以参考:
 
 | dart | js |
 | --- | --- |
